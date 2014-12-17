@@ -17,7 +17,7 @@ def compare(self):
     lines2 = f2.readlines()
   return self.compare_lines(lines1, lines2)
 …
-{% endhighlight $}
+{% endhighlight %}
 
 As I said it’s a very simple piece of code and obviously it reads lines of each file and compare those lines together one by one! If you pay attention to the content of compare method, it’s more like an integration and delegator point of the MatrixFileComparer class! That means it is delegating different responsibilities to appropriate methods inside/outside of this class each of which doing one thing and do it well, then integrates results/effects of them! Such a method in a class should not have any duplication and any low level task or implementation detail and also it’s mostly invoking/delegating to other methods as I mentioned before! But if you look at our compare method, it’s also doing a lower-level task which is opening a file and reading all of its lines via the file handler object! Right there you can notice the different levels of abstraction in this method! One task is reading the content of a file, which is obviously more fine-grained and lower-level than the other thing, which is JUST delegating to compare_lines method!
 
