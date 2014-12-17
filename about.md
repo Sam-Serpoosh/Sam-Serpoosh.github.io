@@ -21,13 +21,10 @@ areas:
 
 You can find out more in the following places:
 
-[Linkedin](https://linkedin.com/in/samserpoosh)
-
-[GitHub](https://github.com/Sam-Serpoosh)
-
-[Resume](https://dl.dropboxusercontent.com/u/100502983/sam_serpoosh_resume_latest.pdf)
-
-[Twitter](https://twitter.com/masihjesus)
+  - [Linkedin](https://linkedin.com/in/samserpoosh)
+  - [GitHub](https://github.com/Sam-Serpoosh)
+  - [Resume](https://dl.dropboxusercontent.com/u/100502983/sam_serpoosh_resume_latest.pdf)
+  - [Twitter](https://twitter.com/masihjesus)
 
 **Happey Hacking :)**
 
