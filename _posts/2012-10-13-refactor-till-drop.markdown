@@ -69,7 +69,7 @@ let(:tr1)  { stub(:date =&gt; Date.new(2012, 9, 1)) }
 
 Then I attacked the duplication for getting current month transactions which was again the exact same line in both tests:
 
-{% highlight %}
+{% highlight ruby %}
 subject do
     @transactions = CurrentMonthTransactions.get_transactions(calendar)
 end
