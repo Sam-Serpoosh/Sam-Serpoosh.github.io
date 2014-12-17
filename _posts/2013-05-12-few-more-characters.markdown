@@ -52,7 +52,7 @@ Now here you cannot understand the complete picture with just a glance. You can 
 
 {% highlight ruby %}
 it “needs a unique event_no” do
-    event1 = Event.create!(attributes) #=&gt; event_no = 1
+    event1 = Event.create!(attributes) #=> event_no = 1
     event2 = Event.new(attributes.merget(event_not: 2))
     event2.should be_valid
 end
