@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Minimum NUmber of Failure Reasons"
+title:  "Minimum Number of Failure Reasons"
 date:   2012-01-20 21:00:00
 categories: programming unit-test
 ---
