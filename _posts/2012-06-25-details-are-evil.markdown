@@ -28,11 +28,12 @@ This is one of the numerous cases that testers can be really helpful. Testers ha
 
 Cucumber perfectly supports the right way of doing this. What you see here should be in the step definitions not in the feature and corresponding scenarios. So we changed this scenario to something like this:
 
-[sourcecode language="ruby"]
+{% highlight ruby %}
 Given a user is on the homepage
 When she signs up
 Then she should be included in the users of the website
-[/sourcecode]
+{% endhighlight %}
+
 That’s it. All those detail information moved into the step definitions of signing up. You should not talk about HOW in the scenario. Scenario is a place for a WHAT of a feature. HOW should be handled in the step definitions (but as little as possible).
 
 Specially in Rails
