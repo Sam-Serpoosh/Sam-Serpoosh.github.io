@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Nested Stubbing => Shouts for Refactoring"
-date:   2013-08-13 11:00:00
+date:   2013-07-31 18:00:00
 categories: programming refactoring ruby unit-testing
 ---
 
