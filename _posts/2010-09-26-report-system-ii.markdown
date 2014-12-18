@@ -164,6 +164,6 @@ public static string Parse(string text, Func<object, string, object> valueGetter
 
 As you saw, after I found out what I need, I tried to write it step by step. I never made a big decision and never wrote something big, instead I tried to do everything little bit at a time, any decision I made was for at most 5 minutes later. I wrote my test first then I wrote a production code which made that failing test passed. At last coverage of this module was 98%(which is a great coverage by the way).
 
-Of course the code you saw is not the first version I wrote. After I made each test passed, I stopped writing tests and code and did some Refactoring on the code I just wrote, So I ended up with a CLEAN CODE with small methods(each of them does one thing and does it well) and that’s one of the enormous benefits of TDD.
+Of course the code you saw is not the first version I wrote. After I made each test passed, I stopped writing tests and code and did some Refactoring on the code I just wrote, So I ended up with a CLEAN CODE with small methods(each of them does one thing and does it well) and that’s one of the numerous benefits of TDD.
 
-*There's even more about this report system, I'm gonna talk about it soon ...*
+*There is more about this report system, I'm gonna talk about it soon ...*
