@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Unit Tests should be for Units"
+title:  "DRY in every aspect"
 date:   2011-03-01 22:00:00
 categories: programming refactoring
 ---
