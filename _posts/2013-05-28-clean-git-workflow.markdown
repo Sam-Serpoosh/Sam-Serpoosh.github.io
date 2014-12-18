@@ -54,7 +54,7 @@ So I try to make all these commits into few nice and meaningful commits which to
 
 {% highlight bash %}
 git rebase -i HEAD~4
-%{ endhighlight %}
+{% endhighlight %}
 
 This will give me the last 4 commits that I made! It will open up an interactive environment (editor) for me including my last 4 commits (which I showed above as a result of git log --oneline) and I see something like the following:
 
