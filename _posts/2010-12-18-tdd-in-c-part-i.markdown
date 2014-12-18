@@ -5,7 +5,7 @@ date:   2010-12-18 23:00:00
 categories: programming tdd
 ---
 
-A few days ago one of my friends told me: “do you think we can do TDD in C?” at first I thought this is some kind of stupid cause TDD makes sense for Object Oriented programming and design so for a non-OO language like C it doesn’t make any sense.
+A few days ago one of my friends told me: “do you think we can do TDD in C?” at first I thought this is kind of stupid cause TDD makes sense for Object Oriented programming and design so for a non-OO language like C it doesn’t make any sense. (which is NOT the case at all BTW :D)
 
 One day after that my friend told me again: “I Googled about it a little and found something. Apparently we can do TDD in C”. You know that I’m a TDD geek so it was really interesting topic for me. When I got home I started to search about that issue and found some useful things on the Internet.
 
