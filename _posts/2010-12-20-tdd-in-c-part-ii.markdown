@@ -223,7 +223,7 @@ void push(int element)
 
 int pop()
 {
-    return itsElements[--itsSize];
+  return itsElements[--itsSize];
 }
 {% endhighlight %}
 
