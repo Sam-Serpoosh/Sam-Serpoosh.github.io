@@ -7,7 +7,7 @@ categories: programming technology-issues
 
 In the previous post I told you we decided to write our own report system, so we’ll have an html page for each letter or report fixed contents and some kind of a special pattern for their interchangeable parts.
 
-*From now I will only say report but remember it could be a letter too.
+*From now I will only say report but remember it could be a letter too.*
 
 Our program read through those html pages and find their interchangeable parts according to the pattern and replace them with the actual values(which were determined by users).
 
