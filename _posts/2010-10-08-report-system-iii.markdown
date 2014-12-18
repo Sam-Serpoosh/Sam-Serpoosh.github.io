@@ -68,7 +68,7 @@ public object GetValue(string propertyName)
 
 Ok now I’m conforming Jeremy’s second law of TDD and DIP so the configuration module is more testable, then I went for writing my test, first of all I wrote an Entity for my testing environment:
 
-{% highlight csharpt %}
+{% highlight csharp %}
 public class DummyEntity : IEntity
 {
   public object Id { get; set; }
