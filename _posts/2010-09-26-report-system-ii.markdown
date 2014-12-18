@@ -20,7 +20,7 @@ public const string ParameterPattern = @"~(?<param>[\w\d.]+)~";
 public const string TemplatePattern = @"\|(?<key>[\w\d\.]+)\[\](?<value>[^\|]*)\|";
 {% endhighlight %}
 
-**Because  “~” and “|” don’t have any meaning in html we used them.
+*Because  “~” and “|” don’t have any meaning in html we used them.*
 
 We used Regex for our patterns. First one is for simple things like ~LetterNo~ or ~Title~ and etc which will be set by users directly. Second one is for repeatable things like collections or one-to-many and many-to-many relationships between our Entities in the system.
 
