@@ -22,5 +22,4 @@ You can find more details in following places:
   - [Resume](https://dl.dropboxusercontent.com/u/100502983/sam_serpoosh_resume_latest.pdf)
   - [Twitter](https://twitter.com/masihjesus)
 
-**Happey Hacking :)**
-
+**Happy Hacking :)**
