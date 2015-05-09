@@ -56,7 +56,7 @@ If you read that paragraph carefully you can see that the logic of the applicati
  
 can be easily separated from the framework/library which is *Storm* in this case and has nothing to do with it. Have the logic isolated, fully tested, easy to reason about since you have full control and understanding about it. Then plug that logic into the framework or wrap the logic building blocks with thin shell of the framework/library. So the building blocks can look like the following:
 
-```java
+{% highlight java %}
 public class TupleTransfomer {
 
   public static Tuple transformTuple(Tuple tuple) {
@@ -86,11 +86,11 @@ public class InfoGenerator {
   
   ...
 }
-```
+{% endhighlight %}
 
 Then you can wrap those building blocks which have the core logic the application in sotrm components. For instance is somewhat how the *Bole-1* `exectue` method will look like:
 
-```java
+{% highlight java %}
 @Override
 public void execute(Tuple tuple) {
   // some boiler plate of storm here
@@ -101,7 +101,7 @@ public void execute(Tuple tuple) {
 }
 
 ...
-```
+{% endhighlight %}
 
 This is a happy **divorce** between the core logic of your application and the framework/library you're dealing with. In this case the framework/library is *Storm* but it could be anything like **Rails**, **Django** or something else. If there is a third party library you're dealing with (e.g Payment Processing Library) use an isolation/separation technique like [**Facade Pattern**](http://en.wikipedia.org/wiki/Facade_pattern) and hide that library behind the walls and block any kind of propagation or ripple effects changes in that library might bring to your application logic. These are all interesting ways of increasing the quality of your desing and not intermingling libraries and frameworks with the core logic of your application and the solution to the problem at hand.
 
