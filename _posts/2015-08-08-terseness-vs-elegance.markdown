@@ -31,7 +31,7 @@ That's a huge win and you don't need to get into shenanigans of iteration over a
 
 So far so good. But sometimes having less number of lines and words does **NOT** necessarily mean you have a better and more **elegant** code. We'll demonstrate that with a very simple example in `Haskell`.
 
-## Payment Sample
+## Payment Example
 
 Imagine you are writing a simple monthly payment tracking application. Obviously in the design of such an application one of the data-types would **Payment**:
 
