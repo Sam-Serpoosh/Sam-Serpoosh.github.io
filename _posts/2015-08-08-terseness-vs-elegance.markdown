@@ -90,16 +90,15 @@ Ok, I stop preaching at this point and I hope that was interesting. Happy Hackin
 
 ### Updates
 
-1. *Nicola* in the comments mentioned the usage of `mconcat` in the implementation of `totalPayment` which is both terser and more elegant. I totally forgot about that and the funny part is, what I wrote in the above code is the **default** implementation of `mconcat`. So the `foldr mappend mempty` can be replaced with its equal value which is `mconcat`:
+**FIRST** *Nicola* in the comments mentioned the usage of `mconcat` in the implementation of `totalPayment` which is both terser and more elegant. I totally forgot about that and the funny part is, what I wrote in the above code is the **default** implementation of `mconcat`. So the `foldr mappend mempty` can be replaced with its equal value which is `mconcat`:
 
 {% highlight haskell %}
 totalPayment = value . mconcat
 {% endhighlight %}
 
-2. *Christian* hinted at a quite better implementation of `squareNumbers` function in our first example which is leveraging `curried functions` so we can have:
+**SECOND** *Christian* hinted at a quite better implementation of `squareNumbers` function in our first example which is leveraging `curried functions` so we can have:
 
 {% highlight haskell %}
 (^) :: (Num a, Integral b) => a -> b -> a -- Defined in GHC.Real
-
 squareNumbers = map (^2)
 {% endhighlight %}
