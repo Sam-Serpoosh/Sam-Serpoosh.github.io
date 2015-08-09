@@ -33,7 +33,7 @@ So far so good. But sometimes having less number of lines and words does **NOT**
 
 ## Payment Example
 
-Imagine you are writing a simple monthly payment tracking application. Obviously in the design of such an application one of the data-types would **Payment**:
+Imagine you are writing a simple monthly payment tracking application. Obviously in the design of such an application one of the data-types would be **Payment**:
 
 {% highlight haskell %}
 data Payment = Payment { value :: Double,
@@ -84,6 +84,6 @@ It's still pretty terse (one WORD more than previous version if that metric is i
 
 ## Elegance over Terseness
 
-If you can improve your design and your codebase with a nice abstraction like the one we did in our example, by all means go ahead and take care of it. We added few more lines of code (instantiation of a Monoid) and more words (our function definition) but at the end of the day we ended up with a more **elegant, abstract and understandable** design and codebase. And that is much more valuable than the number of lines and words. So if you have to trade-off between `Terseness` and `Elegance` I'm sure you know that you should favor `Elegance` **EVERY SINGLE** time!
+If you can improve your design and your codebase with a nice abstraction like the one we did in our example, by all means go ahead and take care of it. We added few more lines of code (instantiation of a Monoid) and more words (our function implementation) but at the end of the day we ended up with a more **elegant, abstract and understandable** design and codebase. And that is much more valuable than the number of lines and words. So if you have to trade-off between `Terseness` and `Elegance` I'm sure you know that you should favor `Elegance` **EVERY SINGLE** time!
 
 Ok, I stop preaching at this point and I hope that was interesting. Happy Hacking :)
