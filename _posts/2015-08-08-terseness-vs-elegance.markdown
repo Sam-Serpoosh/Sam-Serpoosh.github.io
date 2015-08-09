@@ -77,7 +77,7 @@ Now that *Payment* is a *Monoid* we can re-write our little `totalPayment` funct
 
 {% highlight haskell %}
 totalPayment :: [Payment] -> Double
-totalPayment = value . foldr mappend zeroPayment
+totalPayment = value . foldr mappend mempty
 {% endhighlight %}
 
 It's still pretty terse (one WORD more than previous version if that metric is important to you). BUT, IMHO this version is much more elegant and abstracts away a detail which was involved in the previous implementation. Before we were reaching into EVERY single Payment and got its value and then sum them up. Now we're ADDing Payments themselves and they know how to take care of that internally and finally we just grab the **value** out of the result payment.
@@ -87,3 +87,19 @@ It's still pretty terse (one WORD more than previous version if that metric is i
 If you can improve your design and your codebase with a nice abstraction like the one we did in our example, by all means go ahead and take care of it. We added few more lines of code (instantiation of a Monoid) and more words (our function implementation) but at the end of the day we ended up with a more **elegant, abstract and understandable** design and codebase. And that is much more valuable than the number of lines and words. So if you have to trade-off between `Terseness` and `Elegance` I'm sure you know that you should favor `Elegance` **EVERY SINGLE** time!
 
 Ok, I stop preaching at this point and I hope that was interesting. Happy Hacking :)
+
+### Updates
+
+1. *Nicola* in the comments mentioned the usage of `mconcat` in the implementation of `totalPayment` which is both terser and more elegant. I totally forgot about that and the funny part is, what I wrote in the above code is the **default** implementation of `mconcat`. So the `foldr mappend mempty` can be replaced with its equal value which is `mconcat`:
+
+{% highlight haskell %}
+totalPayment = value . mconcat
+{% endhighlight %}
+
+2. *Christian* hinted at a quite better implementation of `squareNumbers` function in our first example which is leveraging `curried functions` so we can have:
+
+{% highlight haskell %}
+(^) :: (Num a, Integral b) => a -> b -> a -- Defined in GHC.Real
+
+squareNumbers = map (^2)
+{% endhighlight %}
