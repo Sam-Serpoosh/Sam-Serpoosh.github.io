@@ -65,7 +65,7 @@ import Data.Monoid
 
 instance Monoid Payment where
   mempty = zeroPayment -- a payment with value set to ZERO
-  Payment { value = v1 } `mappend` Payment { value = v2 } = Payment { value = v1 + v2, ... }
+  Payment {value=v1} `mappend` Payment {value=v2} = Payment {value=v1+v2 ...}
 {% endhighlight %}
 
 You can read about *Monoids* in detail but the main thing you need to know about those functions implemented above are:
