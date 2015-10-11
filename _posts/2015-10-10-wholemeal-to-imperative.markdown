@@ -163,7 +163,7 @@ Square find_first_square(int low) {
 - **least abstract** solution
 
 
-### What's the Point?
+## What's the Point?
 
 As you noticed, we started with the most *abstract* and *wholemeal* solution which was elegant, easy to maintain and understand. But we **NEEDED** to improve the `execution time` dramatically and reduce the `amount of space` required by this solution. That was a **REQUIREMENT** in this case for us. So we had to start removing layers of abstraction **one at a time** until we get to our desired performance and space usage.
 
