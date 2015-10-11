@@ -34,7 +34,7 @@ In this approach, we solve the problem by following these steps:
 
 Here's the **Haskell** implementation:
 
-{% highlight Haskell %}
+{% highlight haskell %}
 findSquaresCount :: Int -> Int -> Int
 findSquaresCount low up = let isSquares = map isSquare [low..up]
                           in length . filter id $ isSquares
@@ -69,7 +69,7 @@ In this approach, we solve the problem by following these steps:
 
 Here's the **Ruby** implementation:
 
-{% highlight Ruby %}
+{% highlight ruby %}
 def count_perfect_squares(low, up)
   perf_sq_count = 0
   (low..up).each { |num| perf_sq_count += 1 if square?(num) }
@@ -99,7 +99,7 @@ end
 
 In this approach, we take leverage of a mathematical relation between consecutive perfect squares:
 
-{% highlight %}
+{% highlight bash %}
 (n + 1)^2 - n^2 = 2 * n + 1
 {% endhighlight %}
 
@@ -112,7 +112,7 @@ We solve the problem by following these steps:
 Here's the **C** implementation:
 
 
-%{ highlight C %}
+{% highlight c %}
 typedef struct {
   int square;
   int root;
