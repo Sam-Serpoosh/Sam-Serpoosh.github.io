@@ -4,7 +4,7 @@ title: "About Me"
 permalink: /about/
 ---
 
-<img style="float:center" src="https://dl.dropboxusercontent.com/u/100502983/top_of_empire_state_building.jpg" />
+<img style="float:center" src="https://dl.dropboxusercontent.com/u/100502983/funny_pic.jpg" />
 
 
 My name is Sam. I'm a Computer Science graduate and a Lifetime Learner. Craftsmanship and TDD enthusiast. Clean Code fanatic. Love UNIX and eXtreme Programming. Super interested in Programming Language Design Concepts and Ideas. I'm also fascinated by Math, Physics and Cosmology! My current work as a Software Dev Engineer and also on-the-side coding/readings fall under the following areas:
