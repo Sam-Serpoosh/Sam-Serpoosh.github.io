@@ -10,9 +10,9 @@ I tweeted about this thing a couple times and now I want to elaborate a little m
 {% highlight ruby %}
 describe UserAuthenticator do
     it “does not authenticate with wrong password” do
-        user = stub(:username =&gt; “bob”, :password =&gt; “pwd”)
-        user_rep = stub(:get_user_by_username =&gt; user)
-        DatabaseUserRepository.stub(:new =&gt; user_rep)
+        user = stub(:username => “bob”, :password => “pwd”)
+        user_rep = stub(:get_user_by_username => user)
+        DatabaseUserRepository.stub(:new => user_rep)
         authenticated = subject.authenticate(“bob”, “wrong password”)
         authenticated.should be_false
     end
@@ -41,8 +41,8 @@ describe UserAuthenticator do
     let(:user_rep) { stub }
     let(:authenticator) { UserAuthenticator.new(user_rep) }
     it “does not authenticate user with wrong password” do
-        user = stub(:username =&gt; “bob”, :password =&gt; “pwd”)
-        user_rep.stub(:get_user_by_username =&gt;; user)
+        user = stub(:username => “bob”, :password => “pwd”)
+        user_rep.stub(:get_user_by_username => user)
         authenticated = authenticator.authenticate(“bob”, “wrong password”)
         authenticated.should be_false
     end
