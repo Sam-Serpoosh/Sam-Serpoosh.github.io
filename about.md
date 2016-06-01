@@ -7,7 +7,7 @@ permalink: /about/
 <img style="float:center" src="https://dl.dropboxusercontent.com/u/100502983/funny_pic.jpg" />
 
 
-My name is Sam. I'm a Computer Science graduate and a Lifetime Learner. Craftsmanship and TDD enthusiast. Clean Code fanatic. Love UNIX and eXtreme Programming. Super interested in Programming Language Design Concepts and Ideas. I'm also fascinated by Math, Physics and Cosmology! My current work as a Software Dev Engineer and also on-the-side coding/readings fall under the following areas:
+My name is Sam, I'm a Computer Science graduate and a lifelong learner. Software Craftsmanship enthusiast. Clean Code fanatic. Love UNIX and eXtreme Programming. Super interested in Programming Language Design Concepts and Ideas. Also fascinated by Math, Physics and Cosmology! My current work and also on-the-side programming/readings fall under the following areas:
 
   - Distributed Systems
   - Functional Programming (Scala, Haskell, etc.)
@@ -23,4 +23,4 @@ You can find more details in following places:
   - [Resume](https://dl.dropboxusercontent.com/u/100502983/sam_serpoosh_resume_latest.pdf)
   - [Twitter](https://twitter.com/masihjesus)
 
-**Happy Hacking :)**
+P.S. **Universe is a simulation game and a mean baby is playing it.**
