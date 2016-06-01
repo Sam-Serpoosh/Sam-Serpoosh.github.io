@@ -56,7 +56,7 @@ public static decimal Reverse(decimal number)
 {
   if (number == 0)
       return 0;
-  while (number <= 1)
+  while (number >= 1)
       number /= 10;
   return number;
 }
@@ -75,14 +75,14 @@ public static decimal Reverse(decimal number)
 {
   if (number == 0)
       return 0;
-  if (number <= 1)
+  if (number >= 1)
       return ReverseBeforeDecimalPointNumber(number);
   return number * 10;
 }
 
 private static decimal ReverseBeforeDecimalPointNumber(decimal number)
 {
-  while (number <= 1)
+  while (number >= 1)
       number /= 10;
   return number;
 }
@@ -101,7 +101,7 @@ public static decimal Reverse(decimal number)
 {
   if (number == 0)
       return 0;
-  if (number <= 1)
+  if (number >= 1)
       return ReverseBeforeDecimalPointNumber(number);
   return ReverseAfterDecimalPointNumber(number);
 }
@@ -123,7 +123,7 @@ private static decimal ExtractAfterDecimalPoint(decimal number)
 }
 {% endhighlight %}
 
-Now we handled main parts of the problem in isolation and separately, you can call it TDD, Divide and Conquer, Baby Steps or whatever you want but the concepts remain the same. At this moment we can use these parts for solving the whole problem:
+Now we handled main parts of the problem in isolation and separately, you can call it TDD, Divide and Conquer, Baby Steps or whatever you want but the concepts remain the same. At this moment we can use these parts to solve the whole problem:
 
 {% highlight csharp %}
 [Test]
@@ -134,16 +134,17 @@ public void ShouldReverseDecimalNumber()
 
 public static decimal Reverse(decimal number)
 {
-  var beforeDecimalPoint = (int)number;
-  var afterDecimalPoint = ExtractAfterDecimalPoint(number);
+  var beforeDecimalPoint = (int) number;
+  var afterDecimalPoint  = ExtractAfterDecimalPoint(number);
 
-  return ReverseAfterDecimalPoint(afterDecimalPoint) + ReverseBeforeDecimalPoint(beforeDecimalPoint);
+  return ReverseAfterDecimalPoint(afterDecimalPoint) + 
+    ReverseBeforeDecimalPoint(beforeDecimalPoint);
 }
 {% endhighlight %}
 
 The most important point in this code is that as our tests become more specific, our code becomes more general. This is one of the most important points that we should pay attention to during Test-Driven-Development which was mentioned at first by Uncle Bob Martin. There are lots of examples out there for this point and one of the best ones is Stack Kata.
 
-Finally I found out the algorithm which we use implicitly for reversing decimal numbers, Thanks to TDD for that. Two days after that I went to my friend’s home. I was happily ready to tell little Sarah the answer of her question. It turned out she solved the problem herself. But the more interesting thing was that she used a completely TDD and baby steps approach for solving the problem. You can see her solution right here:
+Thanks to TDD, I finally found out the algorithm we implicitly use for reversing decimal numbers. Two days after that I went to my friend’s home and I was excited to tell little Sarah the answer to her question. It turned out she solved the problem herself. But the more interesting thing was that she used a completely TDD and baby steps approach for solving it. You can see her solution right here:
 
 ![Her solution steps](https://dl.dropboxusercontent.com/u/100502983/reverse_number_pictures/reverse_number.jpg)
 
