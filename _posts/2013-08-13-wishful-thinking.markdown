@@ -25,7 +25,7 @@ That’s like a 1000 feet view of this specific feature. And if you look at them
    following = get_following_of(current_user)
    last_tweets = []
    following.each do |person|
-   last_tweets &lt;&lt; get_last_tweet_for(person)
+   last_tweets << get_last_tweet_for(person)
    end
    last_tweets
  end
