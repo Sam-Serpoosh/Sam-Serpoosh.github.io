@@ -21,6 +21,6 @@ You can find more details in following places:
   - [Linkedin](https://linkedin.com/in/samserpoosh)
   - [GitHub](https://github.com/Sam-Serpoosh)
   - [Resume](https://dl.dropboxusercontent.com/u/100502983/sam_serpoosh_resume_2016.pdf)
-  - [Twitter](https://twitter.com/masihjesus)
+  - [Twitter](https://twitter.com/sam2code)
 
 P.S. **Universe is a simulation game and a mean baby is playing it.**
