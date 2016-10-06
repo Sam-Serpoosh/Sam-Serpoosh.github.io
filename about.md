@@ -20,7 +20,7 @@ You can find more details in following places:
 
   - [Linkedin](https://linkedin.com/in/samserpoosh)
   - [GitHub](https://github.com/Sam-Serpoosh)
-  - [Resume](https://dl.dropboxusercontent.com/u/100502983/sam_serpoosh_resume_latest.pdf)
+  - [Resume](https://dl.dropboxusercontent.com/u/100502983/sam_serpoosh_resume_2016.pdf)
   - [Twitter](https://twitter.com/masihjesus)
 
 P.S. **Universe is a simulation game and a mean baby is playing it.**
