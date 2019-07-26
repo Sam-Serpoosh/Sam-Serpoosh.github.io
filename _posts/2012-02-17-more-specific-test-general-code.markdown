@@ -146,6 +146,6 @@ The most important point in this code is that as our tests become more specific,
 
 Thanks to TDD, I finally found out the algorithm we implicitly use for reversing decimal numbers. Two days after that I went to my friend’s home and I was excited to tell little Sarah the answer to her question. It turned out she solved the problem herself. But the more interesting thing was that she used a completely TDD and baby steps approach for solving it. You can see her solution right here:
 
-![Her solution steps](https://dl.dropboxusercontent.com/u/100502983/reverse_number_pictures/reverse_number.jpg)
+<iframe src="https://drive.google.com/file/d/1bj5kT3J6UsIox_MUoNC2bhLyxO3AYVpr/preview" width="640" height="480"></iframe>
 
 I am sure she is going to be a great programmer soon :)

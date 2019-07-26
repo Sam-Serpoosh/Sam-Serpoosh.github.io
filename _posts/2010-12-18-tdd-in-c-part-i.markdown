@@ -23,13 +23,13 @@ You can download CppUnitLite [here](http://objectmentor.com/resources/downloads.
 
 3. Choose static library as the type of your project and name it CppUnitLite:
 
-![Static Library Project](https://dl.dropboxusercontent.com/u/100502983/tdd_in_c_pictures/1st.jpg)
+<iframe src="https://drive.google.com/file/d/1_YxhBDAMUq3G4w0KZDPsNo-VfZz2cxWp/preview" width="640" height="480"></iframe>
 
 4. Then add to your project files of CppUnitLite like the below pictures:
 
-![Adding to Project](https://dl.dropboxusercontent.com/u/100502983/tdd_in_c_pictures/2nd.jpg)
+<iframe src="https://drive.google.com/file/d/1Ju6kDXVLx2JJ8lZ4kbRrKDNzDoNG3LLr/preview" width="640" height="480"></iframe>
 
-![CppUnitLite](https://dl.dropboxusercontent.com/u/100502983/tdd_in_c_pictures/3rd.jpg)
+<iframe src="https://drive.google.com/file/d/1L3TdRCdhBf28JYIRCh6ak1wiCEOuwnVk/preview" width="640" height="480"></iframe>
 
 5. And finally Compile this project.
 
@@ -39,7 +39,7 @@ Now we want to write our first C project with TDD approach. Before I start that 
 
 Ok, launch your Dev-C++ IDE again and create a new project and this time choose Empty Project as your project type and call it Stack. Now we should make this project depends on the library we just created. For doing this right click on your project name(top-left of the IDE, called Stack in the project tab) and choose Project Options, then add your library(CppUnitLite.a) to this project like the following picture:
 
-![Project Options](https://dl.dropboxusercontent.com/u/100502983/tdd_in_c_pictures/4th.jpg)
+<iframe src="https://drive.google.com/file/d/1q6KFWIk0YwUX-S5-p4V6gcH01WcQ9oSG/preview" width="640" height="480"></iframe>
 
 Ok now that this project depends on the CppUnitLite library we can use this library’s modules in our project. So we add to our project the first file and save it as StackMain.cpp. Then type the followings in that file:
 
@@ -59,7 +59,7 @@ int main()
  
 Ok, now after you compile and run this project you should get the following result:
 
-![Result of Sample](https://dl.dropboxusercontent.com/u/100502983/tdd_in_c_pictures/5th.jpg)
+<iframe src="https://drive.google.com/file/d/1qPHZrNjK1n_ITzaQJIPRS5hSi-KA9Cp0/preview" width="640" height="480"></iframe>
 
 Of course there were no test failures cause we didn’t write any test yet but we integrated CppUnitLite to our project and it works like a charm now. It’s completely ready for us to write our tests and code for the Stack project.
 

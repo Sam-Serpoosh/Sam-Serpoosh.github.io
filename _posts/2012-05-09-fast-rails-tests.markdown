@@ -83,9 +83,9 @@ end
 
 Now I can run my tests during my development cycle very quickly and get fast feedback which is one of the main purposes of TDD and unit-testing in general. My development process for the business logic and calculations part of the application which BTW are most important parts, became so much smoother and faster and I can completely see the improvement in my productivity when I’m working on a rails app. Here are screenshots from running password encryption related tests in my app before and after this Refactoring and design change:
 
-![Before improvement](https://dl.dropboxusercontent.com/u/100502983/fast_rails_tests_pictures/before.jpg)
+<iframe src="https://drive.google.com/file/d/1BEygUfbyoTb_w8gz5uyhmO2kn7kusQqK/preview" width="640" height="480"></iframe>
 
-![After improvement](https://dl.dropboxusercontent.com/u/100502983/fast_rails_tests_pictures/after.jpg)
+<iframe src="https://drive.google.com/file/d/1hqSJhNqcx3jdwrHLTyCAlGhA3TjPqb74/preview" width="640" height="480"></iframe>
 
 Look how much difference that design change made. I loved this point by Corey during his talk: "most of the times when people have troubles testing something in their code either about running time or testing the functionality itself they change their tests but it’s Test-DRIVEN-Development and it means that we should change our design because that difficulty in testing shouts about design problem which needs to be solved. So, we should change our design NOT our tests."
 

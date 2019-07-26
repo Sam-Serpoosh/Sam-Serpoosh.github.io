@@ -7,17 +7,17 @@ categories: Algorithm Programming
 
 The original and filtered images are as followings. Also for more thorough explanation and the source code, you can check out its [GitHub Repository](https://github.com/Sam-Serpoosh/pic_filtering):
 
-![The Cell](https://dl.dropboxusercontent.com/u/100502983/image_filtering_pics/cell-bmp.jpg)
+<iframe src="https://drive.google.com/file/d/1c20Qaae_czl8IDLNOWoZlSTsDQPxFeEj/preview" width="640" height="480"></iframe>
 
-![Filtered Cell](https://dl.dropboxusercontent.com/u/100502983/image_filtering_pics/cell_out-bmp.jpg)
+<iframe src="https://drive.google.com/file/d/1cbfi4HTU1uLbqeg9_M7SvigBo_huC-Wp/preview" width="640" height="480"></iframe>
 
-![Seston Diatom](https://dl.dropboxusercontent.com/u/100502983/image_filtering_pics/sestondiatom-bmp.jpg)
+<iframe src="https://drive.google.com/file/d/1RIlTWAxVSHW3UNOsYolHAjqTXJY_qXDj/preview" width="640" height="480"></iframe>
 
-![Filtered Seston Diatom](https://dl.dropboxusercontent.com/u/100502983/image_filtering_pics/sestondiatom_out-bmp.jpg)
+<iframe src="https://drive.google.com/file/d/1MIcnOYdpxdHPhU9qiu_nZ03iZLk6j7jo/preview" width="640" height="480"></iframe>
 
-![Filtered Chryseobacterium](https://dl.dropboxusercontent.com/u/100502983/image_filtering_pics/chryseobacterium_out-bmp.jpg)
+<iframe src="https://drive.google.com/file/d/1NuXZDzkmClHIL9BeyFSVAAiHvu08MqVH/preview" width="640" height="480"></iframe>
 
-![Filtered Chryseobacterium](https://dl.dropboxusercontent.com/u/100502983/image_filtering_pics/chryseobacterium_out-bmp-1.jpg)
+<iframe src="https://drive.google.com/file/d/1y6Z-SgY67zSIUU54bZD5lMDFXhnLleo4/preview" width="640" height="480"></iframe>
 
 
 **Happy Hacking :)**
