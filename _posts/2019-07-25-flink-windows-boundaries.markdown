@@ -65,9 +65,13 @@ As mentioned before, the value of **CW** is computed according to some settings 
   - CW = max-event-timestamp-seen-so-far
   - When `CW >= EOW`
       - Window’s result is fired/triggered
+  - While `EOW < CW < EOW + AL`
+      - Events arriving and belonging to this window cause in the firing/emission of **updated** results for **the window**
   - When `CW >= EOW + AL`
       - The window is **discarded**
       - Events arriving after this point and belonging to this window are **late** and will be **discarded**
+
+NOTE that you can also control (to some extent) the behavior of **firing results** via other levers such as [Triggers](https://ci.apache.org/projects/flink/flink-docs-stable/dev/stream/operators/windows.html#triggers); but that's out of the scope of this post.
 
 ## Our Toy Example
 
@@ -209,6 +213,13 @@ Needless to say, there will be **no empty** windows! One of the rationales behin
 ### Session Windows
 
 In the case of **session windows**, event times drive the allocation of windows and their boundaries for the most part. But, **overlapping** windows get **merged** and the segregation between windows are determined by the configured **gap duration**.
+
+## A Word On Testing
+
+When it comes to automated testing of your Flink application, it’s worth tackling it at least from two angles:
+
+1. Have a modular design which allows you to isolate and structure your pure logic in small and composable components. Each of those components should have their dedicated unit tests to verify their behavior.
+2. Then you’d plug these components into Flink APIs (e.g. **ItemAggregator** into **aggregate** API). At this point, you should zoom out and also write tests which verify the behavior of your components integrated/plugged with/into Flink. The tests written in [this Gist](https://gist.github.com/Sam-Serpoosh/194068bd4e9fea9958bfae1cf618597b) belong to this category of verifications.
 
 ## Acknowledgement
 
