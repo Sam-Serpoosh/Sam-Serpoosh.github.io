@@ -5,7 +5,7 @@ date:   2019-07-25 21:00:00
 categories: programming stream-processing flink
 ---
 
-I've been trying to get a better and deeper understanding with regard to **window's boundaries** and **behavior** when it comes to *stateful stream processing* in [**Apache Flink**](https://flink.apache.org/). This led to a detailed and example-driven quest which did not leave me alone even during my sleep!
+I've been trying to get a better and deeper understanding with regard to **window's boundaries** and **behavior** when it comes to *stateful stream processing* in [**Apache Flink**](https://flink.apache.org/). This led to a detailed and example-driven quest which I'm going to lay out below.
 
 IMHO, one of the best ways to **really and deeply** understand a piece of functionality and verify that understanding, is writing **automated tests** for it. The reason being, traditional unit tests are extremely primitive and stupid; hence, you need to truly understand ins and outs of the target piece in order to properly lay out the ingredients of each test:
 
@@ -49,7 +49,7 @@ Throughout this post I'm going to use some acronyms and symbols, so let's quickl
 
 ## Current Watermark & The Behavior It Ensues
 
-Imagine we have the **TumblingEventTimeWindow** of **[8:00, 8:05)** with size **5 minutes** (**EOW** would be **8:04:59:999**). Any **event** whose **timestamp** is in that range, belongs to this window and will be stored as such. Below you can find the role **CW** can play in a few important scenarios which we'll be dealing with in our examples later:
+Imagine we have a **TumblingEventTimeWindow** of size **5 minutes** (an example of a window in this case would be **[8:00, 8:05)** whose **EOW** is **8:04:59:999**). Any **event** whose **timestamp** is in that range, belongs to this window and will be stored as such. Below you can find the role **CW** can play in a few important scenarios which we'll be dealing with in our examples later:
 
 - **MOO = ZERO & NO AL**
   - CW = max-event-time-seen-so-far
@@ -75,7 +75,7 @@ NOTE that you can also control (to some extent) the behavior of **firing results
 
 ## Our Toy Example
 
-For the purposes of this post, let's say we have a simple `Item` which has the following properties:
+For the purposes of this post, let's say an **event** represents a simple `Item` which has the following properties:
 
 - `ts`
   - This represents our [**EVENT_TIME**](https://ci.apache.org/projects/flink/flink-docs-stable/dev/event_time.html) timestamp throughout all the examples; as opposed to `Processing Time` which we do **not** care about here. This is the timestamp that our [TimestampExtractor](https://ci.apache.org/projects/flink/flink-docs-release-1.6/dev/event_timestamp_extractors.html) will work with.
@@ -241,7 +241,7 @@ Our conversation (a gist of which you can see below) continued on Twitter regard
 
 He also took the time to review the first draft of this post which I really appreciate.
 
-### What's Up With Allowed-Lateness Test
+## What's Up With Allowed-Lateness Test
 
 Every test laid out in the aforementioned **GitHub Gist** passes with the expected behavior. **Except** for the case of *Allowed Lateness Of 2 Minutes* which you can find [here](https://gist.github.com/Sam-Serpoosh/194068bd4e9fea9958bfae1cf618597b#file-tumblingeventtimewindowtest-java-L249-L372). One of the followings must be happening:
 
