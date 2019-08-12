@@ -166,7 +166,7 @@ DataStream<Item> aggregateItem(DataStream<Item> items) {
 
 #### AL Is TWO Minutes
 
-<iframe src="https://drive.google.com/file/d/1VGFezWXEK4dwQU-YquLQ3iQISgxjQTto/preview" width="743" height="126"></iframe>
+<iframe src="https://drive.google.com/file/d/1GpVbE6DmL9gLCeKiA38DaQxAXTsAogd4/preview" width="746" height="133"></iframe>
 
 At **t2**:
 
@@ -179,7 +179,7 @@ At **t3**:
 
 - A **LATE** event belonging to **[8:00, 8:05)** window arrives
 - This results in firing an **updated result** for **[8:00, 8:05)** which now contains **TWO elements**
-- The **CW** is still **8:06** which is **<=** to **(EOW + AL)**
+- The **CW** is still **8:06** which is **<** **(EOW + AL)**
 - Hence, the window will be **kept**
 
 At **t4**:
